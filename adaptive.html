@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Adaptive Layout Example</title>
+	<style>
+		body {
+			background: #2980b9;
+			color: #FFF;
+			font-family: Helvetica;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+		header,
+		nav,
+		section {
+			outline: 1px solid rgba(255, 255, 255, 0.8);
+			margin-bottom: 10px;
+			border-radius: 3px;
+		}
+		header {
+			padding: 20px 0;
+		}
+		nav,
+		section {
+			padding: 200px 0;
+		}
+		.wrapper {
+			width: 400px;
+			margin: 0 auto;
+		}
+		header {
+			width: 400px;
+		}
+		nav {
+			width: 400px;
+		}
+		section {
+			width: 400px;
+		}
+		@media screen and (min-width: 800px) {
+			.wrapper {
+				width: 640px;
+			}
+			header {
+				width: 640px;
+			}
+			nav,
+			section {
+				float: left;
+			}
+			nav {
+				width: 133px;
+				margin-right: 10px;
+			}
+			section {
+				width: 497px;
+			}
+		}
+		@media screen and (min-width: 1000px) {
+			.wrapper {
+				width: 960px;
+			}
+			header {
+				width: 960px;
+			}
+			nav {
+				width: 200px;
+			}
+			section {
+				width: 750px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Adaptive Layout Example</h1>
+		<header>HEADER</header>
+		<nav>NAV</nav>
+		<section>SECTION</section>
+	</div>
+</body>
+
+</html>
